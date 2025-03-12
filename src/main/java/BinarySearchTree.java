@@ -222,7 +222,8 @@ public class BinarySearchTree {
         BinarySearchTree binaryTree = new BinarySearchTree();
         // Initialize Scanner
         Scanner scanner = new Scanner(System.in);
-
+        System.out.println("\nWelcome to Binary Search Tree!");
+        System.out.println("With this program you can initiate a blanced binary search tree, add nodes, delete nodes, and print in different traversal orders. Use the Keyboard to interact with the menu below:");
         // NAVIGATION MENU
         // Set exitProgram to false, set to true when exiting program
         // While loop will run while exitProgram is false, allowing continuation
