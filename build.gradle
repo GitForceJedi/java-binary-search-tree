@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'com.kenwillcode.bst'  // Can be changed or removed if not using packages
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.2'
+}
+
+application {
+    mainClass = 'BinarySearchTree'  // ✅ Use correct main class
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'BinarySearchTree'  // ✅ Ensure correct entry point
+    }
+}

@@ -202,7 +202,7 @@ public class BinarySearchTree {
     // Actual method responsible for creating the Balanced Search Tree
     // @param start = starting index, not the actual value
     // @param end = ending index, not the value
-    private Node createBinarySearchTree(int[] data, int start, int end) {
+    public Node createBinarySearchTree(int[] data, int start, int end) {
         if (start > end) return null;
 
         int mid = (start + end) / 2;
